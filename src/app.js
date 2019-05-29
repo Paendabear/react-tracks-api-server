@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(cors(options));
 
 app.use(helmet());
-app.use(validateBearerToken);
+// app.use(validateBearerToken);
 
 app.get('/', (req, res) => {
   res.send('Hello, world!');
