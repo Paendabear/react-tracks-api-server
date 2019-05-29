@@ -6,9 +6,14 @@
   "scripts": {
     "start": "node src/server.js",
     "test": "mocha --require test/setup.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master"
   },
   "keywords": [],
+  "engines":{
+    "node":"11.12.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
