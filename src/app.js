@@ -36,7 +36,7 @@ app.use(cors(options));
 app.use(helmet());
 // app.use(validateBearerToken);
 
-app.use('/', statsRouter)
+app.use('/stats', statsRouter)
 
 
 app.use(errorHandler)
