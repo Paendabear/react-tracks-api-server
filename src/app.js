@@ -9,6 +9,8 @@ const helmet = require('helmet');
 const { NODE_ENV } = require('./config');
 const errorHandler = require('./error-handler'); 
 const validateBearerToken = require('./validate-bearer-token');
+const statsRouter = require('./Stats/stats-router');
+
 
 const app = express();
 
@@ -34,9 +36,7 @@ app.use(cors(options));
 app.use(helmet());
 // app.use(validateBearerToken);
 
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
+app.use('/', statsRouter)
 
 
 app.use(errorHandler)
