@@ -5,3 +5,4 @@
 {"message":"res.status is not a function","level":"error"}
 {"message":"res.status(...).json(...).catch is not a function","level":"error"}
 {"message":"res.status(...).json(...).catch is not a function","level":"error"}
+{"message":"res.status(...).json(...).catch is not a function","level":"error"}
