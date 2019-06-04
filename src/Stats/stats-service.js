@@ -1,11 +1,11 @@
 const StatsService = {
-    getAllTrails(knex){
-        found = knex.select('*').from('trails');
-        return found
+    getAllTrails(knex) {
+       // found = found
+        return  knex.select('*').from('trails');
     },
     insertTrail(knex, insertTrail) {
         return knex.insert(insertTrail).into('trails');
     },
-}
+};
 
-module.export = StatsService;
+module.exports = StatsService;

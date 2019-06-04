@@ -6,3 +6,9 @@
 {"message":"res.status(...).json(...).catch is not a function","level":"error"}
 {"message":"res.status(...).json(...).catch is not a function","level":"error"}
 {"message":"res.status(...).json(...).catch is not a function","level":"error"}
+{"message":"StatsService.getAllTrails is not a function","level":"error"}
+{"message":"StatsService.getAllTrails is not a function","level":"error"}
+{"message":"StatsService.getAllTrails is not a function","level":"error"}
+{"message":"StatsService.getAllTrails is not a function","level":"error"}
+{"message":"no pg_hba.conf entry for host \"108.31.209.116\", user \"lqxauqiavkssfj\", database \"d5sj9g16ioq83v\", SSL off","level":"error"}
+{"message":"no pg_hba.conf entry for host \"108.31.209.116\", user \"lqxauqiavkssfj\", database \"d5sj9g16ioq83v\", SSL off","level":"error"}

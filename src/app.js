@@ -41,5 +41,4 @@ app.use('/stats', statsRouter)
 
 app.use(errorHandler)
 
-
 module.exports = app;
