@@ -23,7 +23,7 @@ statsRouter
     //     test2: "test item 2"
     // })
 
-    .catch(next)
+    .catch(next);
     })
     .post(bodyParser, (req,res,next) => {
         const {sessionId, mobile, sessionTime, lat,  lng, buttonPressed,
@@ -33,6 +33,7 @@ statsRouter
                 oneHoverTime, oneHoverAmount,
                 twoHoverTime, twoHoverAmount,
                 threeHoverTime, threeHoverAmount,
+                metaLog,
             } = req.body;
         const insertTrail = {
             sessionId:sessionId,
@@ -47,6 +48,7 @@ statsRouter
             oneHoverTime, oneHoverAmount,
             twoHoverTime, twoHoverAmount,
             threeHoverTime, threeHoverAmount,
+            metaLog,
         }
 
         const knexInstance = req.app.get('db')
