@@ -8,20 +8,27 @@
     "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js",
     "predeploy": "npm audit",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "migrate-production": "postgrator --config postgrator-production-config.js"
   },
   "keywords": [],
-  "engines":{
-    "node":"11.12.0"
+  "engines": {
+    "node": "11.12.0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
+    "express-router": "0.0.1",
     "helmet": "^3.16.0",
+    "knex": "^0.17.3",
     "morgan": "^1.9.1",
+    "pg": "^7.11.0",
+    "postgrator": "^3.10.1",
+    "uuid": "^3.3.2",
     "winston": "^3.2.1"
   },
   "devDependencies": {
