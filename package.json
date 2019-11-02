@@ -24,7 +24,7 @@
     "express": "^4.16.4",
     "express-router": "0.0.1",
     "helmet": "^3.16.0",
-    "knex": "^0.17.3",
+    "knex": "^0.19.5",
     "morgan": "^1.9.1",
     "pg": "^7.11.0",
     "postgrator": "^3.10.1",
